@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities
+﻿namespace ClassScheduler.Domain.Entities
 {
     public class Class
     {
@@ -10,5 +10,6 @@
         public Currency Currency { get; set; }
         public ICollection<Student> Students { get; set; }
         public ICollection<Lesson> Lessons { get; set; }
+        public bool IsActive { get; set; }
     }
 }

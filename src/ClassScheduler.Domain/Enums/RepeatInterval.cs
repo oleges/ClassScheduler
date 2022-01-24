@@ -1,4 +1,4 @@
-﻿namespace Domain
+﻿namespace ClassScheduler.Domain.Enums
 {
     public enum RepeatInterval
     {

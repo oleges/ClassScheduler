@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using ClassScheduler.Domain.Enums;
+
+namespace ClassScheduler.Domain.Entities
 {
     public class Lesson
     {
@@ -9,5 +11,6 @@
         public DateTimeOffset? RepeatUntil { get; set; }
         public int ClassId { get; set; }
         public Class Class { get; set; }
+        public ICollection<LessonException> LessonExceptions { get; set; }
     }
 }
