@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ClassScheduler.Application\ClassScheduler.Application.csproj" />
     <ProjectReference Include="..\ClassScheduler.Infrastructure\ClassScheduler.Infrastructure.csproj" />
   </ItemGroup>
 
