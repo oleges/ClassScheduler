@@ -1,7 +1,6 @@
 using ClassScheduler.Infrastructure.Contexts;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ClassSchedulerContext>(
     opt => opt.UseSqlite("Data Source=..\\..\\ClassScheduler.db"));
-builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("ClassScheduler.Application"));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

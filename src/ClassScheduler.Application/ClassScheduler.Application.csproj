@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassScheduler.Domain\ClassScheduler.Domain.csproj" />
+    <ProjectReference Include="..\ClassScheduler.Infrastructure\ClassScheduler.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
