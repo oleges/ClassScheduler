@@ -3,6 +3,7 @@ using System;
 using ClassScheduler.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassScheduler.Infrastructure.Migrations
 {
     [DbContext(typeof(ClassSchedulerContext))]
-    partial class ClassSchedulerContextModelSnapshot : ModelSnapshot
+    [Migration("20220209232153_AddPricesToDbContext")]
+    partial class AddPricesToDbContext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.1");

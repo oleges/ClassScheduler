@@ -14,6 +14,7 @@ namespace ClassScheduler.Infrastructure.Contexts
         public DbSet<Currency> Currencies { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<LessonException> LessonExceptions { get; set; }
+        public DbSet<Price> Prices { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Subject> Subjects { get; set; }
     }
